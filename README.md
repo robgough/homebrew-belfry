@@ -6,10 +6,11 @@ a native macOS/iPadOS front-end for real tmux.
 ## Install
 
 ```sh
-brew install --cask robgough/belfry
+brew tap robgough/belfry
+brew install --cask belfry
 ```
 
-That's it — Homebrew taps this repo automatically on first use. To update:
+To update later:
 
 ```sh
 brew upgrade --cask belfry
@@ -17,11 +18,16 @@ brew upgrade --cask belfry
 
 (Belfry also updates itself in-app via Sparkle, so either path keeps you current.)
 
+> **Strict-mode taps.** If you run Homebrew with `HOMEBREW_REQUIRE_TAP_TRUST`
+> set, it refuses to load any third-party tap until you trust it. Homebrew will
+> tell you; just run `brew trust robgough/belfry` after tapping, then install.
+
 ## Uninstall
 
 ```sh
 brew uninstall --cask belfry          # remove the app
 brew uninstall --zap --cask belfry    # also remove settings, caches, saved hosts
+brew untap robgough/belfry            # forget the tap
 ```
 
 Saved host secrets live in the macOS Keychain and are left untouched by `--zap`;
