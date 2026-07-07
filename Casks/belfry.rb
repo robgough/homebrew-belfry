@@ -5,7 +5,7 @@ cask "belfry" do
   url "https://github.com/robgough/belfry/releases/download/v#{version}/Belfry-#{version}.zip",
       verified: "github.com/robgough/belfry/"
   name "Belfry"
-  desc "Native macOS front-end for tmux with Claude Code status badges"
+  desc "Native front-end for tmux with Claude Code status badges"
   homepage "https://belfry.robgough.net/"
 
   livecheck do
@@ -14,7 +14,7 @@ cask "belfry" do
   end
 
   auto_updates true
-  depends_on macos: ">= :sonoma"
+  depends_on macos: :sonoma
   depends_on formula: "tmux"
 
   app "Belfry.app"
