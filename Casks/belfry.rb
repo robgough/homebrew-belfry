@@ -1,6 +1,6 @@
 cask "belfry" do
-  version "2026.07.12"
-  sha256 "6d13c465ddf339234a636f1b0a1b3e3ab27698f5b954f8eec9480116773893d8"
+  version "2026.07.14"
+  sha256 "1a22415876160dc70851686b782d63d0898fe59caee49586421e15181dfafa0d"
 
   url "https://github.com/robgough/belfry/releases/download/v#{version}/Belfry-#{version}.zip",
       verified: "github.com/robgough/belfry/"
