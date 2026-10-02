@@ -2,10 +2,9 @@ cask "belfry" do
   version "2026.10.2"
   sha256 "2f4db8dd213566f3405c7820e5670288e6f3d21efd4d529ee3a3d1d3988d8070"
 
-  url "https://github.com/robgough/belfry/releases/download/v#{version}/Belfry-#{version}.zip",
-      verified: "github.com/robgough/belfry/"
+  url "https://github.com/robgough/belfry/releases/download/v#{version}/Belfry-#{version}.zip"
   name "Belfry"
-  desc "Native front-end for tmux with Claude Code status badges"
+  desc "Native front-end for tmux with live coding-agent status"
   homepage "https://belfry.robgough.net/"
 
   livecheck do
