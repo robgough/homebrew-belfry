@@ -1,6 +1,6 @@
 cask "belfry" do
-  version "2026.10.7"
-  sha256 "f15a229b23f78af71bf4745a391e0334159c48ca16f46cd25aafe16bd0340e34"
+  version "2026.10.8"
+  sha256 "bb00f7399acafe821b5641dfdbc801b3fbfc235b652e03a7457e0ea8fb4e5977"
 
   url "https://github.com/robgough/belfry/releases/download/v#{version}/Belfry-#{version}.zip"
   name "Belfry"
@@ -13,8 +13,8 @@ cask "belfry" do
   end
 
   auto_updates true
-  depends_on macos: :sonoma
   depends_on formula: "tmux"
+  depends_on macos: :sonoma
 
   app "Belfry.app"
 
